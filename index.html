@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logan Ward — UX/UI Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo" onclick="goTo('home')">Logan Ward</span>
+  <ul class="nav-links">
+    <li><a onclick="goTo('home')" data-page="home">Home</a></li>
+    <li><a onclick="goTo('reels')" data-page="reels">Reels Prototype</a></li>
+    <li><a onclick="goTo('adobe')" data-page="adobe">Adobe</a></li>
+    <li><a onclick="goTo('contact')" data-page="contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ═══ HOME ═══ -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <img src="https://drive.google.com/thumbnail?id=1586uOBMcbt62_ViJG-bVm0XXDA6nPmbY&sz=w1200" alt="Hero" />
+    <div class="hero-overlay"><h1>Logan Ward UX/UI Portfolio</h1></div>
+  </div>
+
+  <div class="content">
+    <h2>About Me & My Process</h2>
+    <p>Hello, thank you for taking the time to inspect my portfolio. I am Logan Ward, a graduating student at Rutgers University – New Brunswick. At this time, I have one UX/UI project to showcase, from my Human Computer Interaction course that basically took us through the UX/UI design process, taught by Dr. Alex Lu. My group chose Instagram as our platform and tackled a real issue within it.</p>
+    <p>While this is how he taught it, I can easily adapt to whatever process a mentor or team utilizes, as I am a quick learner and overall good with people. However, I believe many of these apply to typical processes or are at least translatable. I have taken a few art and graphic design courses as well, and overall consider myself a creative person.</p>
+    <p>This website was made by me through principles I learned in my Web Design course (HTML, CSS, JavaScript). Other courses I had that may prove beneficial for this career are Information Visualization (Tableau), Object-Oriented Programming (Python), and Designing Tech Solutions (more UX experience). All of these have furthered my knowledge, and made me a better UX/UI Designer.</p>
+    <p>I also have a page with some things I have done with the Adobe Suite.</p>
+    <div class="cta-group">
+      <button class="btn" onclick="goTo('reels')">Instagram Reels Project</button>
+      <button class="btn" onclick="goTo('adobe')">Adobe</button>
+    </div>
+  </div>
+  <div class="contact-footer">
+    <div class="contact-footer-inner">
+      <h2>Contact Information</h2>
+      <div class="contact-grid">
+        <div class="contact-col">
+          <h4>Location</h4>
+          <p>149 George Street<br>New Brunswick, NJ 08901<br><br>310 Fountain Avenue<br>Burlington, NJ 08016</p>
+        </div>
+        <div class="contact-col">
+          <h4>Contact</h4>
+          <p>
+            <a href="mailto:lward1216@gmail.com">lward1216@gmail.com</a><br>
+            <a href="tel:6093312620">(609) 331-2620</a><br>
+            <a href="https://www.linkedin.com/in/logan-ward-282a341b1/" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>&copy; 2025 Logan Ward</footer>
+</div>
+
+<!-- ═══ REELS ═══ -->
+<div class="page" id="page-reels">
+  <div class="content">
+
+    <div class="step">
+      <p class="step-label">Step One</p>
+      <h2>Pain-points and Testing</h2>
+      <p>The first stage in all of this is to familiarize the team with the platform itself — this obviously is only necessary when first taking on a project or if another section is added. For our group and app, Instagram, we found three issues: privacy concerns and data collection, the AI chatbots, and doomscrolling (over use of the feed and Reels function).</p>
+      <p>We decided to tackle doomscrolling on Reels. This can have severe mental consequences for some. Obviously, people using the app more is the dream for the company, so we had to think of creative ways to go about retaining users' time spent and the ad revenue that comes from hyper active Reels users.</p>
+      <p><em>Note: for all of these steps I have Google Documents that go more in depth. If you are interested, please let me know and I can share them!</em></p>
+      <h3>Description</h3>
+      <p>Reels is a scrolling, infinite set of videos, very similar to TikTok. There are likes and a comment section on every video, along with the ability to share to others.</p>
+      <h3>Problem</h3>
+      <p>With the never-ending nature of it, users can get trapped into a loop that can be debilitating and stressful for some.</p>
+      <h3>User Groups</h3>
+      <p>The younger generation are the most common you will encounter — those in their teens and twenties.</p>
+      <h3>User Priorities</h3>
+      <p>Users are seeking entertainment, creativity, and an escape when they choose to watch Reels.</p>
+    </div>
+
+    <div class="step">
+      <p class="step-label">Step Two</p>
+      <h2>Interviewing Process and Analysis</h2>
+      <p>Next, interviewing real users to get their opinions of the platform and, in particular, how they interact with Reels in our case.</p>
+      <p>This starts by making a set of questions, in which we are trying to get an honest and open statement without being too leading. The main idea here is to get a feel of how users make a platform a part of their daily/weekly/monthly lives, and things they like or dislike. It is also important to get users of varying diversity, ages, and interests to cover as much ground as possible.</p>
+      <p>With a substantial number of these interviews and/or surveys, they can be analyzed. By looking at answers thoroughly, commonalities will begin to reveal themselves — these can be grouped into clusters which can then be further condensed into patterns.</p>
+      <p>This <a href="https://www.figma.com/board/IIrEeeW9ivBCS1RrkuT8sy/230-FA25-Affinity-Diagram-Template-Sample?node-id=2002-130&p=f" target="_blank">link</a> will take you to my group's FigJam showing this, along with the user flow.</p>
+    </div>
+
+    <div class="step">
+      <p class="step-label">Step Three</p>
+      <h2>Personas, Scenarios, Brainstorming, and Storyboarding</h2>
+      <p>Personas take key aspects gathered from things like surveys and interviews, channeling them into a single example user. Scenarios and storyboarding put this fictional person into scenes where they may encounter any given issues.</p>
+      <p>Brainstorming is when the team comes together to come up with ideas and bounce them off of each other. It is judgement free time, and someone can say something that another member of the team can take to another level.</p>
+      <div class="img-grid">
+        <div class="img-single"><img src="https://drive.google.com/thumbnail?id=1sgRNqQen10BmDgg93G7uNp-nbaFEpFro&sz=w1200" alt="Persona" /></div>
+        <div class="img-single"><img src="https://drive.google.com/thumbnail?id=1vG6zP4bHsBpipPKs7puFTfvdMFBGmOWO&sz=w1200" alt="Brainstorm" /></div>
+      </div>
+      <p><strong>Persona</strong> — Here is a persona I made for the project. We made two total, with written scenarios describing use.</p>
+      <p><strong>Brainstorming Board</strong> — Our brainstorm board, led us to two paths we wanted to pursue.</p>
+      <div class="img-grid">
+        <div class="img-single"><img src="https://drive.google.com/thumbnail?id=1hrceLoqfdd3JxFkGeNiagZn88ug-Q7SZ&sz=w1200" alt="Ideas" /></div>
+        <div class="img-single"><img src="https://drive.google.com/thumbnail?id=1mzlXkrlUPf5fNXtxi6yquK80iP6vLfmI&sz=w1200" alt="Sketch" /></div>
+      </div>
+      <p><strong>Potential Ideas</strong> — Our two ideas.</p>
+      <p><strong>Sketch</strong> — Developing one of the ideas.</p>
+      <div class="img-single" style="margin-top:1rem">
+        <img src="https://drive.google.com/thumbnail?id=1J6m2vHG2tUTpZ4YEKS4ntemHy5mrQizf&sz=w1200" alt="Storyboard" />
+      </div>
+      <p><strong>Storyboard</strong> — Made by a group member, we made one for each idea we had, this one being the winner.</p>
+    </div>
+
+    <div class="step">
+      <p class="step-label">Step Four</p>
+      <h2>User Flow &amp; Lo-fi Prototyping</h2>
+      <p>A user flow is helpful when used as a layout to guide basic prototypes. It can avoid missing out on things that should be included from the jump, and result in less unnecessary iterations. It can also express ideas to others outside of the UX/UI team.</p>
+      <div class="img-single"><img src="https://drive.google.com/thumbnail?id=1Fm6RanT_Zpc16ZVywiPgpzRsE83huaT5&sz=w1200" alt="User Flow" /></div>
+      <p>Lo-fi prototypes should be simple and cheap to make — they are mainly to get the point across and provide a basic layout that may be implemented into a hi-fi prototype.</p>
+      <div class="img-grid">
+        <div><img src="https://drive.google.com/thumbnail?id=1jUHvTLS0s36Boc5H4l-V9RP8Box2sdZ0&sz=w1200" alt="Paper prototype 1" /></div>
+        <div><img src="https://drive.google.com/thumbnail?id=12grrmL7DjZpd--BdBsQEVz1KjDTByC4O&sz=w1200" alt="Paper prototype 2" /></div>
+      </div>
+    </div>
+
+    <div class="step">
+      <p class="step-label">Step Five</p>
+      <h2>Hi-fi Prototyping</h2>
+      <p>This is a video demonstration I did, taking you through my finalized Hi-fi prototype. We had another rendition of it before this that we took feedback from the class and professor to improve. This prototype was designed entirely by me on Figma, except for any gifs you see and the initial Reels home page.</p>
+      <div class="video-wrap">
+        <iframe src="https://drive.google.com/file/d/1VXANFS1134O_F2hoAs5WJHpAGjSDEvzS/preview" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="contact-footer">
+    <div class="contact-footer-inner">
+      <h2>Contact Information</h2>
+      <div class="contact-grid">
+        <div class="contact-col">
+          <h4>Location</h4>
+          <p>149 George Street<br>New Brunswick, NJ 08901<br><br>310 Fountain Avenue<br>Burlington, NJ 08016</p>
+        </div>
+        <div class="contact-col">
+          <h4>Contact</h4>
+          <p>
+            <a href="mailto:lward1216@gmail.com">lward1216@gmail.com</a><br>
+            <a href="tel:6093312620">(609) 331-2620</a><br>
+            <a href="https://www.linkedin.com/in/logan-ward-282a341b1/" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>&copy; 2025 Logan Ward</footer>
+</div>
+
+<!-- ═══ ADOBE ═══ -->
+<div class="page" id="page-adobe">
+  <div class="content">
+    <h2>Adobe Work</h2>
+    <p>Here you can see some works I have made with either Photoshop or InDesign. These show my abilities within the software, along with comprehension of typography, framing, and grabbing attention. (and a colored pencil drawing)</p>
+
+    <div class="slideshow">
+      <div class="slide-main">
+        <button class="slide-arrow left" id="arrow-left">&#8249;</button>
+        <img id="slide-img" src="https://drive.google.com/thumbnail?id=1wIb323jjvyz-RTMdDKA__su_Zpm3B18M&sz=w1200" alt="Adobe work" />
+        <button class="slide-arrow right" id="arrow-right">&#8250;</button>
+      </div>
+      <div class="slide-thumbs" id="slide-thumbs">
+        <img src="https://drive.google.com/thumbnail?id=1wIb323jjvyz-RTMdDKA__su_Zpm3B18M&sz=w1200" alt="Elephant" class="thumb active" data-index="0" />
+        <img src="https://drive.google.com/thumbnail?id=1XEuSrYEYYDA6SXsoBD7Y0wGUGp12tPBX&sz=w1200" alt="Bark 1" class="thumb" data-index="1" />
+        <img src="https://drive.google.com/thumbnail?id=10CMwcvslZD2PZDx2PH-BgaaJkjeb6r56&sz=w1200" alt="Bark 2" class="thumb" data-index="2" />
+        <img src="https://drive.google.com/thumbnail?id=1ZAjJKm6qPtP0ovADq1YEIbFs2zB2lYjz&sz=w1200" alt="Drawing" class="thumb" data-index="3" />
+      </div>
+      <p class="slide-counter"><span id="slide-current">1</span> / 4</p>
+    </div>
+  </div>
+
+  <div class="contact-footer">
+    <div class="contact-footer-inner">
+      <h2>Contact Information</h2>
+      <div class="contact-grid">
+        <div class="contact-col">
+          <h4>Location</h4>
+          <p>149 George Street<br>New Brunswick, NJ 08901<br><br>310 Fountain Avenue<br>Burlington, NJ 08016</p>
+        </div>
+        <div class="contact-col">
+          <h4>Contact</h4>
+          <p>
+            <a href="mailto:lward1216@gmail.com">lward1216@gmail.com</a><br>
+            <a href="tel:6093312620">(609) 331-2620</a><br>
+            <a href="https://www.linkedin.com/in/logan-ward-282a341b1/" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>&copy; 2025 Logan Ward</footer>
+</div>
+
+<!-- ═══ CONTACT ═══ -->
+<div class="page" id="page-contact">
+  <div class="contact-page-hero">
+    <h1>Contact Me</h1>
+    <p>Reach out to me if interested in interviewing!</p>
+    <p><a href="mailto:lward1216@gmail.com">lward1216@gmail.com</a></p>
+    <p><a href="tel:6093312620">(609) 331-2620</a></p>
+    <p><a href="https://www.linkedin.com/in/logan-ward-282a341b1/" target="_blank">LinkedIn</a></p>
+  </div>
+
+  <div class="contact-img">
+    <!-- Swap this src for your headshot URL when ready -->
+    <img src="https://drive.google.com/thumbnail?id=12hVGw1gP8u93mBTO84vAgkp7CLrf7fMW&sz=w1200" alt="Photo" />
+  </div>
+
+  <div class="contact-footer">
+    <div class="contact-footer-inner">
+      <h2>Contact Information</h2>
+      <div class="contact-grid">
+        <div class="contact-col">
+          <h4>Location</h4>
+          <p>149 George Street<br>New Brunswick, NJ 08901<br><br>310 Fountain Avenue<br>Burlington, NJ 08016</p>
+        </div>
+        <div class="contact-col">
+          <h4>Contact</h4>
+          <p>
+            <a href="mailto:lward1216@gmail.com">lward1216@gmail.com</a><br>
+            <a href="tel:6093312620">(609) 331-2620</a><br>
+            <a href="https://www.linkedin.com/in/logan-ward-282a341b1/" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>&copy; 2025 Logan Ward</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
