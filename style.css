@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #111;
+  --off-white: #faf9f7;
+  --mid: #555;
+  --light-border: #e0ddd8;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--off-white);
+  color: var(--black);
+}
+
+/* ── PAGE SYSTEM ── */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ── NAV ── */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  border-bottom: 1px solid var(--light-border);
+  position: sticky;
+  top: 0;
+  background: var(--off-white);
+  z-index: 100;
+}
+
+.nav-logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.2rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--mid);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.nav-links a:hover,
+.nav-links a.active-link {
+  color: var(--black);
+}
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  height: 72vh;
+  min-height: 440px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-family: 'DM Serif Display', serif;
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+/* ── CONTENT ── */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.content h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.75rem;
+}
+
+.content h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 2rem 0 0.75rem;
+}
+
+.content p,
+.content li {
+  font-size: 0.975rem;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 1.1rem;
+}
+
+.content em {
+  color: var(--mid);
+  font-style: italic;
+}
+
+.content a {
+  color: var(--black);
+  font-weight: 500;
+}
+
+/* ── STEP SECTIONS ── */
+.step {
+  border-top: 1px solid var(--light-border);
+  padding: 3.5rem 0;
+}
+
+.step:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.step-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+/* ── IMAGES ── */
+.img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.img-grid img,
+.content img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.img-single {
+  margin: 1.5rem 0;
+}
+
+/* ── FULL WIDTH IMAGE ── */
+.full-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ── VIDEO ── */
+.video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 2rem 0;
+}
+
+.video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 4px;
+}
+
+/* ── SLIDESHOW ── */
+.slideshow {
+  margin: 2rem 0;
+}
+
+.slide-main {
+  position: relative;
+  width: 100%;
+  background: #f0ede8;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+}
+
+.slide-main img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  display: block;
+}
+
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+  border-radius: 2px;
+  color: var(--black);
+  transition: background 0.2s;
+  z-index: 2;
+}
+
+.slide-arrow:hover { background: #fff; }
+.slide-arrow.left { left: 0.75rem; }
+.slide-arrow.right { right: 0.75rem; }
+
+.slide-thumbs {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.thumb {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  opacity: 0.6;
+  flex-shrink: 0;
+  transition: opacity 0.2s, border-color 0.2s;
+}
+
+.thumb:hover { opacity: 0.85; }
+
+.thumb.active {
+  border-color: var(--black);
+  opacity: 1;
+}
+
+.slide-counter {
+  text-align: center;
+  font-size: 0.78rem;
+  color: #999;
+  margin-top: 0.6rem;
+  letter-spacing: 0.05em;
+}
+
+/* ── BUTTONS ── */
+.cta-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.6rem;
+  border: 1px solid var(--black);
+  text-decoration: none;
+  color: var(--black);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  background: none;
+}
+
+.btn:hover {
+  background: var(--black);
+  color: #fff;
+}
+
+/* ── CONTACT FOOTER ── */
+.contact-footer {
+  background: #f0ede8;
+  padding: 4.5rem 2rem;
+}
+
+.contact-footer-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-footer-inner h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.contact-col h4 {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #999;
+  margin-bottom: 0.75rem;
+}
+
+.contact-col p {
+  font-size: 0.9rem;
+  line-height: 1.85;
+  color: #555;
+}
+
+.contact-col a {
+  color: #555;
+  text-decoration: none;
+}
+
+.contact-col a:hover { text-decoration: underline; }
+
+/* ── CONTACT PAGE ── */
+.contact-page-hero {
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-page-hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.contact-page-hero p {
+  font-size: 1rem;
+  color: var(--mid);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.contact-page-hero a {
+  color: var(--black);
+  font-weight: 500;
+}
+
+.contact-img {
+  max-width: 520px;
+  margin: 0 auto 4rem;
+  padding: 0 2rem;
+}
+
+.contact-img img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  padding: 1.75rem;
+  font-size: 0.78rem;
+  color: #aaa;
+  border-top: 1px solid var(--light-border);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 620px) {
+  nav { padding: 1rem 1.25rem; }
+  .nav-links { gap: 1rem; }
+  .hero h1 { font-size: 1.9rem; }
+  .contact-grid,
+  .img-grid { grid-template-columns: 1fr; }
+}
